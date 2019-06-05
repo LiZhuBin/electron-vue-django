@@ -3,6 +3,7 @@
 # Create your views here.
 from django.http import HttpResponse
 from . import models
+import json
 # def index(request):
 #     return HttpResponse("Hello, world. You're at the polls index.")
 def index(request):#获取数据库的数据
@@ -1015,5 +1016,5 @@ def apriori(request):
 1000 15 34 47
 """
 
-    x =  [i[2:] for i in f.splitlines()]
-    return HttpResponse(x)
+    x =  [{'index': str(index),'item': str(item) }for index, item in enumerate(f.splitlines())]
+    return HttpResponse(json.dumps(x), content_type="application/json")

@@ -4,5 +4,5 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('apriori',views.apriori,name='apriori')
+    path('apriori/getdata',views.apriori,name='apriori')
 ]

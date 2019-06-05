@@ -41,12 +41,6 @@
        return {
 
        }
-     },
-     methods: {
-       menuClick: function (menuRouter) {
-         this.$router.push()
-         console.log('dd')
-       }
      }
    }
 </script>
