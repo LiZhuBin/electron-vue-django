@@ -18,7 +18,7 @@ from django.urls import path, include
 import os
 import django
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "UserAdmin.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "backsite.settings")
 django.setup()
 
 urlpatterns = [

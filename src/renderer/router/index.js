@@ -10,10 +10,24 @@ export default new Router({
       name: 'landing-page',
       component: require('@/components/LandingPage').default,
       children: [{
-        path: 'analyse',
-        name: 'analyse',
+        path: 'apriori',
+        name: 'apriori',
         component: require('@/components/apriori/AprioriPage').default
-      }]
+      },
+        {
+          path: 'analyse',
+          name: 'analyse',
+          component: require('@/components/apriori/AnalysePage').default,
+
+        },
+        {
+          path: 'dbshow',
+          name: 'dbshow',
+          component: require('@/components/apriori/DbShowPage').default,
+        }
+      ]
+
+
     },
     {
       path: '*',

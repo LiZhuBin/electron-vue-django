@@ -1,6 +1,6 @@
-# Create your views here.
-from django.http import HttpResponse
-from . import models
-# def index(request):
-#     return HttpResponse("Hello, world. You're at the polls index.")
-print(models.Client.objects.all())
+import models
+import backsite.urls
+import models
+
+a = models.OriCommodity.objects.all()
+print(a)

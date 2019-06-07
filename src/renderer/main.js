@@ -6,14 +6,12 @@ import App from './App'
 import router from './router'
 import store from './store'
 import Global from '../Global'
-import qs from 'qs'
+
 
 Vue.use(ElementUI)
 axios.defaults.baseURL = Global.URL_ROOT
-Vue.prototype.qs = qs
 
-axios.defaults.baseURL = 'https://api.example.com'
-axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
+
 // axios 配置
 
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
