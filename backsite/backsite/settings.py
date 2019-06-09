@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Django settings for backsite project.
 
@@ -46,7 +47,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+   # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -120,7 +121,10 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD': '8486426255',
         'HOST': 'localhost',
-        'PORT': '3306'
+        'PORT': '3306',
+        'ATOMIC_REQUEST': True,
+        'CHARSET': 'gbk',
+        'COLLATION': 'gbk_chinese_ci',
 
     }
 }

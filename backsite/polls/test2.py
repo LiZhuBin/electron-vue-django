@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import models
 import backsite.urls
 import models

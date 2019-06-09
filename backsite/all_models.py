@@ -74,27 +74,47 @@ class AuthUserUserPermissions(models.Model):
         unique_together = (('user', 'permission'),)
 
 
-class Client(models.Model):
-    clientid = models.IntegerField(db_column='clientID', blank=True, null=True)  # Field name made lowercase.
-    clientname = models.CharField(db_column='clientName', max_length=254, blank=True, null=True)  # Field name made lowercase.
-    regionid = models.IntegerField(db_column='regionId', blank=True, null=True)  # Field name made lowercase.
-    regionsite = models.CharField(db_column='regionSite', max_length=254, blank=True, null=True)  # Field name made lowercase.
-    regionphone = models.CharField(db_column='regionPhone', max_length=254, blank=True, null=True)  # Field name made lowercase.
+class ChangeDates(models.Model):
+    year = models.PositiveIntegerField()
+    month = models.CharField(max_length=12)
+    day = models.CharField(max_length=12)
 
     class Meta:
         managed = False
-        db_table = 'client'
+        db_table = 'change_dates'
 
 
-class Commodity(models.Model):
-    commodityid = models.IntegerField(db_column='commodityID', blank=True, null=True)  # Field name made lowercase.
-    commodityna = models.CharField(db_column='commodityNa', max_length=254, blank=True, null=True)  # Field name made lowercase.
-    commodityty = models.IntegerField(db_column='commodityTy', blank=True, null=True)  # Field name made lowercase.
-    typeid = models.IntegerField(db_column='typeId', blank=True, null=True)  # Field name made lowercase.
+class ChangeFact(models.Model):
+    datesid = models.PositiveIntegerField(db_column='datesId', blank=True, null=True)  # Field name made lowercase.
+    areaid = models.PositiveIntegerField(db_column='areaId', blank=True, null=True)  # Field name made lowercase.
+    goodsid = models.PositiveIntegerField(db_column='goodsId', blank=True, null=True)  # Field name made lowercase.
+    customerid = models.PositiveIntegerField(db_column='customerId', blank=True, null=True)  # Field name made lowercase.
+    total = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    amount = models.PositiveIntegerField(blank=True, null=True)
 
     class Meta:
         managed = False
-        db_table = 'commodity'
+        db_table = 'change_fact'
+
+
+class ChangeGoods(models.Model):
+    name = models.CharField(max_length=50)
+    model = models.CharField(max_length=50)
+    kind = models.CharField(max_length=50)
+
+    class Meta:
+        managed = False
+        db_table = 'change_goods'
+
+
+class ChangeSite(models.Model):
+    province = models.CharField(max_length=20)
+    city = models.CharField(max_length=20)
+
+    class Meta:
+        managed = False
+        db_table = 'change_site'
 
 
 class DjangoAdminLog(models.Model):
@@ -141,44 +161,61 @@ class DjangoSession(models.Model):
         db_table = 'django_session'
 
 
-class Order(models.Model):
-    orderid = models.IntegerField(db_column='orderID', blank=True, null=True)  # Field name made lowercase.
-    orderdate = models.CharField(db_column='orderDate', max_length=254, blank=True, null=True)  # Field name made lowercase.
-    ordergetdat = models.CharField(db_column='orderGetDat', max_length=254, blank=True, null=True)  # Field name made lowercase.
-    ordermoney = models.CharField(db_column='orderMoney', max_length=254, blank=True, null=True)  # Field name made lowercase.
-    clientid = models.IntegerField(db_column='clientID', blank=True, null=True)  # Field name made lowercase.
+class OriClient(models.Model):
+    clientname = models.CharField(db_column='clientName', max_length=254, blank=True, null=True)  # Field name made lowercase.
+    regionid = models.IntegerField(db_column='regionId', blank=True, null=True)  # Field name made lowercase.
+    regionsite = models.CharField(db_column='regionSite', max_length=254, blank=True, null=True)  # Field name made lowercase.
+    regionphone = models.CharField(db_column='regionPhone', max_length=254, blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
         managed = False
-        db_table = 'order'
+        db_table = 'ori_client'
 
 
-class Orderdetail(models.Model):
+class OriCommodity(models.Model):
+    commodityname = models.CharField(db_column='commodityName', max_length=254, blank=True, null=True)  # Field name made lowercase.
+    commoditytype = models.CharField(db_column='commodityType', max_length=255, blank=True, null=True)  # Field name made lowercase.
+    typeid = models.IntegerField(db_column='typeId', blank=True, null=True)  # Field name made lowercase.
+
+    class Meta:
+        managed = False
+        db_table = 'ori_commodity'
+
+
+class OriOrderdetail(models.Model):
     orderid = models.IntegerField(db_column='orderID', blank=True, null=True)  # Field name made lowercase.
-    detailid = models.IntegerField(db_column='detailID', blank=True, null=True)  # Field name made lowercase.
     commodityid = models.CharField(db_column='commodityID', max_length=254, blank=True, null=True)  # Field name made lowercase.
     detailprice = models.CharField(db_column='detailPrice', max_length=254, blank=True, null=True)  # Field name made lowercase.
-    detailaccou = models.IntegerField(db_column='detailAccou', blank=True, null=True)  # Field name made lowercase.
+    detailaccout = models.IntegerField(db_column='detailAccout', blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
         managed = False
-        db_table = 'orderdetail'
+        db_table = 'ori_orderdetail'
 
 
-class Region(models.Model):
-    regionid = models.IntegerField(db_column='regionID', blank=True, null=True)  # Field name made lowercase.
+class OriOrders(models.Model):
+    bookdate = models.DateField(db_column='bookDate')  # Field name made lowercase.
+    deadline = models.DateField()
+    total = models.FloatField()
+    customerid = models.PositiveIntegerField(db_column='customerId')  # Field name made lowercase.
+
+    class Meta:
+        managed = False
+        db_table = 'ori_orders'
+
+
+class OriRegion(models.Model):
     regionname = models.CharField(db_column='regionName', max_length=254, blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
         managed = False
-        db_table = 'region'
+        db_table = 'ori_region'
 
 
-class Type(models.Model):
-    typeid = models.IntegerField(db_column='typeID', blank=True, null=True)  # Field name made lowercase.
+class OriType(models.Model):
     typename = models.CharField(db_column='typeName', max_length=254, blank=True, null=True)  # Field name made lowercase.
     typestate = models.CharField(db_column='typeState', max_length=254, blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
         managed = False
-        db_table = 'type'
+        db_table = 'ori_type'

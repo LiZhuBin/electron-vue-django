@@ -28,23 +28,30 @@
             {{tag}}
         </el-tag>
         </div>
-
-    <el-table>
+<div>{{this.result}}</div>
         <el-table
-                :data="this.tableData"
-                height="300"
-                border
-                style="width: 100%" >
+                :data="result"
+                style="width: 100%">
             <el-table-column
-                    v-for="{ prop, label } in colConfigs"
-                    :key="prop"
-                    :prop="prop"
-                    :label="label">
+                    prop="date"
+                    label="日期"
+                    width="150">
+            </el-table-column>
+            <div v-for="city in data.citiesSelect">
+            <el-table-column label=city >
+                <el-table-column label= "广东省" >
+
+                    <el-table-column
+                            prop="data"
+                            label=good
+                            width="120">
+                    </el-table-column>
+
+                    </el-table-column>
 
             </el-table-column>
-
+            </div>
         </el-table>
-    </el-table>
     </div>
 </template>
 
@@ -57,7 +64,9 @@
           'citiesSelect':[],
         'dataSelect':[],
         'goodsSelect':[]},
+        result :[],
         check : [],
+
 
       }
     },
@@ -66,16 +75,25 @@
         //从store中获得选择的城市、日期、商品名称
         this.data.citiesSelect = [];
         this.data.dataSelect = this.$store.state.date_select;
-        this.$store.state.goodsSelect = [];
+        this.data.goodsSelect = [];
+
         for (let city in this.$store.state.cities_select) {
           this.data.citiesSelect.push(this.$store.state.cities[city])
         }
         for (let good in this.$store.state.goods_select) {
           this.data.goodsSelect.push(this.$store.state.goods[good])
         }
+        console.info(this.data);
+        this.run()
       },
       run:function () {
-        //this.$http.post('')
+        this.$http.get('data-change/anaylse',{
+          params:{
+                selectData : this.data
+          }}).then((res)=>{
+            this.result = res.data
+            console.log(res)
+        })
       }
 
 

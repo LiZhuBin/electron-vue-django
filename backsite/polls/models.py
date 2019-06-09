@@ -1,4 +1,3 @@
-# coding:utf8
 # This is an auto-generated Django model module.
 # You'll have to do the following manually to clean this up:
 #   * Rearrange models' order
@@ -6,7 +5,6 @@
 #   * Make sure each ForeignKey has `on_delete` set to the desired behavior.
 #   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
 # Feel free to rename the models, but don't rename db_table values or field names.
-
 from django.db import models
 
 
@@ -87,13 +85,13 @@ class ChangeDates(models.Model):
 
 
 class ChangeFact(models.Model):
-    datesid = models.PositiveIntegerField(db_column='datesId')  # Field name made lowercase.
-    areaid = models.PositiveIntegerField(db_column='areaId')  # Field name made lowercase.
-    goodsid = models.PositiveIntegerField(db_column='goodsId')  # Field name made lowercase.
-    customerid = models.PositiveIntegerField(db_column='customerId')  # Field name made lowercase.
-    total = models.FloatField()
-    price = models.FloatField()
-    amount = models.PositiveIntegerField()
+    datesid = models.PositiveIntegerField(db_column='datesId', blank=True, null=True)  # Field name made lowercase.
+    areaid = models.PositiveIntegerField(db_column='areaId', blank=True, null=True)  # Field name made lowercase.
+    goodsid = models.PositiveIntegerField(db_column='goodsId', blank=True, null=True)  # Field name made lowercase.
+    customerid = models.PositiveIntegerField(db_column='customerId', blank=True, null=True)  # Field name made lowercase.
+    total = models.FloatField(blank=True, null=True)
+    price = models.FloatField(blank=True, null=True)
+    amount = models.PositiveIntegerField(blank=True, null=True)
 
     class Meta:
         managed = False
