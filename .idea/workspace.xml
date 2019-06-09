@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="632923c9-ba9e-4148-9ab2-0bbe4a0caca3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backsite/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backsite/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backsite/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backsite/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backsite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backsite/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backsite/all_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backsite/all_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backsite/backsite/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backsite/backsite/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backsite/backsite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backsite/backsite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backsite/backsite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backsite/backsite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backsite/backsite/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/backsite/backsite/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backsite/polls/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backsite/polls/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backsite/polls/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backsite/polls/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backsite/polls/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/backsite/polls/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backsite/polls/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backsite/polls/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backsite/polls/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/backsite/polls/test2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backsite/polls/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/backsite/polls/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backsite/polls/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backsite/polls/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backsite/polls/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backsite/polls/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/LandingPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/LandingPage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/apriori/AprioriPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/apriori/AprioriPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/apriori/ResultPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/apriori/ResultPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/store/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,8 +52,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/renderer/components/apriori/AnalysePage.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="95">
-                  <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+                <state relative-caret-position="361">
+                  <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
@@ -134,8 +117,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/renderer/components/LandingPage.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="114">
-                  <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+                <state relative-caret-position="190">
+                  <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
                   <folding>
                     <element signature="n#style#0;n#el-container#0;n#template#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#el-aside#0;n#el-container#0;n#template#0;n#!!top" expanded="true" />
@@ -206,7 +189,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1940" />
@@ -478,7 +461,7 @@
       <workItem from="1559738717457" duration="3065000" />
       <workItem from="1559742258240" duration="42740000" />
       <workItem from="1559998376966" duration="647000" />
-      <workItem from="1560074634107" duration="9834000" />
+      <workItem from="1560074634107" duration="10275000" />
     </task>
     <task id="LOCAL-00001" summary="完成与第一次与后台的数据交互，将1000条订单数据显示到页面">
       <created>1559750634342</created>
@@ -498,10 +481,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80502000" />
+    <option name="totallyTimeSpent" value="80943000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18758257" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -517,7 +500,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.27903682" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2181303" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32956153" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.3286119" />
@@ -822,13 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/apriori/AnalysePage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer/components/apriori/LocationPage.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="931">
@@ -861,10 +837,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/apriori/AnalysePage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer/components/LandingPage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        <state relative-caret-position="190">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#el-container#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#el-aside#0;n#el-container#0;n#template#0;n#!!top" expanded="true" />

@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13a0a3c3-6dab-44bc-b1ed-558b9d70c196" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/all_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/all_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backsite/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backsite/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backsite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backsite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backsite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backsite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backsite/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/backsite/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/test2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/polls/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/polls/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/renderer/components/apriori/ResultPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../src/renderer/components/apriori/ResultPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/renderer/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/renderer/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/renderer/components/LandingPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../src/renderer/components/LandingPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/renderer/components/apriori/AprioriPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../src/renderer/components/apriori/AprioriPage.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,8 +39,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/polls/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="209">
-                  <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+                <state relative-caret-position="215">
+                  <caret line="20" selection-start-line="20" selection-end-line="86" selection-end-column="30" />
                   <folding>
                     <element signature="e#51#64#0" expanded="true" />
                   </folding>
@@ -153,7 +138,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="80" />
     <option name="y" value="71" />
     <option name="width" value="1940" />
@@ -393,8 +378,16 @@
       <workItem from="1559993056178" duration="3730000" />
       <workItem from="1559998166315" duration="1056000" />
       <workItem from="1560003331036" duration="1557000" />
-      <workItem from="1560006888579" duration="19440000" />
+      <workItem from="1560006888579" duration="20479000" />
     </task>
+    <task id="LOCAL-00001" summary="数据挖掘作业上交版本">
+      <created>1560091059674</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560091059674</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -430,7 +423,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100437000" />
+    <option name="totallyTimeSpent" value="101476000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -442,7 +435,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49885583" visible="true" weight="0.19235925" />
@@ -460,7 +453,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.32956153" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.41926345" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.04249292" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -498,6 +491,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="数据挖掘作业上交版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据挖掘作业上交版本" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/28e43f9b-83ab-4c01-b8ca-f762ab9f327a/console.sql" />
@@ -686,8 +683,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/polls/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+        <state relative-caret-position="215">
+          <caret line="20" selection-start-line="20" selection-end-line="86" selection-end-column="30" />
           <folding>
             <element signature="e#51#64#0" expanded="true" />
           </folding>

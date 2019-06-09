@@ -1,0 +1,4 @@
+{
+  "test_apriori.py": true,
+  "test_apriori.py::TestApriori::test_apriori_data": true
+}

@@ -15,10 +15,18 @@
 
         </el-table>
         <el-badge></el-badge>
-        <div style="text-align:center" slot="header">
-            <el-button type="primary" round @click="run" >进行关联规则转化</el-button>
+        <el-form :inline="true" :model="formInline" class="demo-form-inline">
+            <el-form-item label="最小支持度">
+                <el-input v-model="formInline.user" ></el-input>
+            </el-form-item>
+            <el-form-item label="最小置信度">
+                <el-input v-model="formInline.region" ></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="run">进行关联规则转化</el-button>
+            </el-form-item>
+        </el-form>
 
-        </div>
         <el-table
                 :data="this.resultData"
                 height="300"
@@ -53,6 +61,10 @@
         {prop: 'confidence', label: '关联度'}
       ]
       return {
+        formInline: {
+          user: '',
+          region: ''
+        },
         tableData: [],
         resultData: []
       }
